@@ -1,0 +1,5 @@
+#!/bin/bash
+
+exec >> /tmp/teleport_acct_debug.log
+exec 2>&1
+exec /etc/pam-exec.d/teleport_acct.py
